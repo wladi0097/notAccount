@@ -1,5 +1,5 @@
 <nb-layout>
-  <nb-layout-header fixed>Not Account</nb-layout-header>
+  <nb-layout-header fixed><img src="./assets/derBoi.png" alt="boi"></nb-layout-header>
 
   <nb-sidebar>
     <nb-menu [items]="items">
@@ -8,5 +8,19 @@
 
   <nb-layout-column>
     Random Stuff like this <button nbButton>Nice Button</button>
+
+    <nb-card>
+      <nb-card-header>
+        Your Feedback
+      </nb-card-header>
+      <nb-card-body>
+        <form name="feedback" method="POST" data-netlify="true">
+          <input nbInput fullWidth type="text" placeholder="Your Name" name="name"/>
+          <textarea nbInput fullWidth placeholder="Your feedback, which will be ignored" name="feedback"></textarea>
+          <button outline nbButton>Submit</button>
+        </form>
+      </nb-card-body>
+    </nb-card>
+
   </nb-layout-column>
 </nb-layout>

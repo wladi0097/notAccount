@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {NbButtonModule, NbLayoutModule, NbMenuModule, NbSidebarModule, NbThemeModule} from '@nebular/theme';
+import {NbButtonModule, NbCardModule, NbInputModule, NbLayoutModule, NbMenuModule, NbSidebarModule, NbThemeModule} from '@nebular/theme';
 import { BigBoiComponent } from './big-boi/big-boi.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -21,6 +21,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NbButtonModule,
     NbThemeModule.forRoot(),
     NbMenuModule.forRoot(),
+    NbInputModule,
+    NbCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
