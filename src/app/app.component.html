@@ -14,10 +14,11 @@
         Your Feedback
       </nb-card-header>
       <nb-card-body>
-        <form name="feedback" method="POST" data-netlify="true">
+        <form name="feedback" method="POST">
+          <input type="hidden" name="form-name" value="feedback" />
           <input nbInput fullWidth type="text" placeholder="Your Name" name="name"/>
           <textarea nbInput fullWidth placeholder="Your feedback, which will be ignored" name="feedback"></textarea>
-          <button outline nbButton>Submit</button>
+          <button type="submit" outline nbButton>Submit</button>
         </form>
       </nb-card-body>
     </nb-card>
